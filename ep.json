@@ -1,9 +1,10 @@
 {
   "parts": [
     {
-      "name": "ether-o-meter",
+      "name": "ep_metrics_admin",
 	    "hooks": {
-		    "expressCreateServer" : "ep_ether-o-meter/index:expressServer"
+		    "expressCreateServer" : "ep_metrics_admin/index:expressServer",
+                    "eejsBlock_adminMenu" : "ep_metrics_admin/index:eejsBlock_adminMenu"
 	    }
     }
   ]
